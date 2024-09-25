@@ -1,0 +1,65 @@
+/* Proyecto: Lista de Tareas */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+body {
+  background-color: azure;
+}
+main {
+  width: 450px;
+  margin: 20px auto;
+  background-color: aqua;
+  border: 2px solid navy;
+  border-radius: 5px;
+}
+.new-task-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding: 20px;
+}
+.wrapper-left,
+.wrapper-right {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-left {
+  flex-basis: 90%;
+}
+.wrapper-right {
+  flex-basis: 10%;
+}
+#new-task {
+  width: 100%;
+  line-height: 24px;
+  padding-left: 5px;
+  margin-bottom: 5px;
+}
+#add-task {
+  width: 100%;
+  height: 28px;
+  font-size: 1.1rem;
+}
+.date-filters {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 10px;
+}
+.task-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 20px;
+  height: 80vh;
+  background-color: lightblue;
+}
